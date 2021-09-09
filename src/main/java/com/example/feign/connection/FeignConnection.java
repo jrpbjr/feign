@@ -9,7 +9,7 @@ import com.example.feign.entity.Endereco;
 
 
 
-@FeignClient(name = "endereco", url = "httpd://viacep.com.br/ws/")
+@FeignClient(name = "endereco", url = "https://viacep.com.br/ws/")
 public interface FeignConnection {
 
 	@RequestMapping(method = RequestMethod.GET, value = "/")
